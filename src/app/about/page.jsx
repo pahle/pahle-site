@@ -3,6 +3,7 @@ import Link from 'next/link'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
+import { Sparkles } from '@/components/Sparkles'
 import {
   GitHubIcon,
   InstagramIcon,
@@ -61,33 +62,42 @@ export default function About() {
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Delectus, doloremque. Doloribus sit iusto nesciunt, dicta error
-              natus rem numquam et quae labore sequi, beatae cupiditate
-              aspernatur excepturi incidunt, voluptate autem laboriosam
-              provident placeat. Dicta voluptatum doloremque maxime cum delectus
-              porro.
+              Like many, I have been passionate about making things since
+              childhood. However, my path to creation took a different route. In
+              my early teens, my initial interest in technology leaned towards
+              ethical hacking. I explored the world of exploiting
+              vulnerabilities, but this{' '}
+              <span className="text-lg font-extrabold text-[#50B2E0]">
+                {'dark side'}
+              </span>{' '}
+              of technology eventually lost its appeal.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio rem
-              inventore eaque quaerat amet nemo dolorem eius voluptatum ad
-              placeat deleniti aliquid illo totam reprehenderit vel qui, cumque
-              obcaecati neque voluptates libero! Ipsa nobis alias velit vitae id
-              sint aperiam?
+              During my senior high school years, my focus shifted towards
+              something more constructive:{' '}
+              <span className="text-lg font-bold">web development</span>. This
+              creative outlet for building things aligned better with my
+              interests.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-              necessitatibus et quis similique! Temporibus harum voluptatibus
-              ipsum provident quas asperiores possimus magni et, quis earum
-              facere doloribus libero qui nam aspernatur iste officiis quo
-              dicta. Dicta culpa beatae odit nemo.
+              I dove headfirst into the world of web development. I devoured
+              online tutorials, experimented with different coding languages,
+              and spent countless hours building simple websites. The thrill of
+              creating something functional and visually appealing from scratch
+              was immensely satisfying. As I honed my skills, I began to explore
+              more complex concepts like web frameworks and back-end
+              development. The process of learning and building fueled my
+              passion, and I knew I had found my true calling.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nam
-              facere a dignissimos dolore perspiciatis architecto assumenda, ea
-              earum fugiat vel excepturi voluptates doloremque ex saepe ipsa
-              exercitationem vero aliquid neque. Minus maiores repudiandae
-              distinctio, voluptas quasi adipisci nostrum voluptate.
+              Today, I am a{' '}
+              <Sparkles>Full-Stack Developer</Sparkles>,
+              the bridge between imagination and reality. My creativity{' '}
+              {"isn't"} confined to a canvas or a notebook; it flourishes in the
+              code I write. With every line, I transform ideas into vibrant,
+              user-friendly websites. The thrill of seeing my vision come to
+              life as a fully functional platform keeps me constantly pushing
+              the boundaries of design and functionality.
             </p>
           </div>
         </div>

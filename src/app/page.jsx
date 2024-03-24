@@ -235,15 +235,15 @@ export default async function Home() {
   return (
     <>
       <Container className="mt-16 sm:mt-32">
-        <div className="max-w-3xl">
+        <div className="lg:max-w-3xl md:max-w-3xl max-w-xs">
           <p className="mb-6 text-base text-zinc-600 dark:text-zinc-400">
             Hello, my name is
           </p>
-          <h1 className="relative text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+          <h1 className="relative text-4xl font-bold tracking-tight text-zinc-800 lg:text-5xl md:text-4xl dark:text-zinc-100">
             Mohammad Rayhan Arkan Fahlevi
-            <span className="absolute right-[86.5px] top-0 hidden text-teal-500 opacity-0 duration-[2s] hover:-top-10 hover:opacity-100 lg:block">
+            <div className="absolute right-[86.5px] top-[-3rem] hidden text-teal-500 opacity-0 duration-[2s] hover:top-[-5.50rem] hover:opacity-100 lg:inline py-12">
               Pahle
-            </span>
+            </div>
             <span className="absolute -right-6 top-5 hidden text-xs lg:block">
               {'<- Hover me!'}
             </span>
