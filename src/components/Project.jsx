@@ -60,9 +60,8 @@ export default function Project() {
             <div className="relative z-10 flex w-full items-center justify-center rounded-xl bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 overflow-hidden">
               <Image
                 src={project.logo}
-                alt=""
+                alt={project.name}
                 className="w-full"
-                unoptimized
               />
             </div>
             <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
