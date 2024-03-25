@@ -37,6 +37,19 @@ function MailIcon(props) {
   )
 }
 
+function InlineTextStyle({
+  children,
+  color = '#000',
+  size = 'lg',
+  weight = 'extrabold',
+}) {
+  return (
+    <span className={`text-${size} font-${weight} text-[${color}]`}>
+      {children}
+    </span>
+  )
+}
+
 export const metadata = {
   title: 'About',
   description:
@@ -62,40 +75,39 @@ export default function About() {
             I’m (Pahle). I live in Bogor, Indonesia, where I design the future.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-            <p>
-              Like many, I have been passionate about making things since
-              childhood. However, my path to creation took a different route. In
-              my early teens, my initial interest in technology leaned towards
-              ethical hacking. I explored the world of exploiting
+            <div>
+              Like many, I have been passionate about{' '}
+              <InlineTextStyle color="#7B5EA7">making things</InlineTextStyle>{' '}
+              since childhood. However, my path to creation took a different
+              route. In my early teens, my initial interest in technology leaned
+              towards ethical hacking. I explored the world of exploiting
               vulnerabilities, but this{' '}
-              <span className="text-lg font-extrabold text-[#DA3842]">
-                {"\'dark side\'"}
-              </span>{' '}
+              <InlineTextStyle color="#DA3842">{"'dark side'"}</InlineTextStyle>{' '}
               of technology eventually lost its appeal.
-            </p>
-            <p>
+            </div>
+            <div>
               During my senior high school years, my focus shifted towards
               something more constructive:{' '}
-              <span className="text-lg font-extrabold text-[#50B2E0]">
-                web development
-              </span>
+              <InlineTextStyle color="#50B2E0">web development</InlineTextStyle>
               . This creative outlet for building things aligned better with my
               interests.
-            </p>
-            <p>
-              I dove headfirst into the world of web development. I devoured
+            </div>
+            <div>
+              I dove <InlineTextStyle color='#F38BA3'>headfirst</InlineTextStyle> into the world of web development. I devoured
               online tutorials, experimented with different coding languages,
               and spent countless hours building simple websites. The thrill of
               creating something functional and visually appealing from scratch
               was immensely satisfying. As I honed my skills, I began to explore
               more complex concepts like web frameworks and back-end
-              development. The process of learning and building fueled my
-              passion, and I knew I had found my true calling.
-            </p>
-            <p>
+              development. The process of learning and building fueled my{' '}
+              <InlineTextStyle color="#0ba95b">passion</InlineTextStyle>, and I
+              knew I had found my{' '}
+              <InlineTextStyle color="#fc7428">true calling</InlineTextStyle>.
+            </div>
+            <div>
               Today, I am a{' '}
               <Sparkles className="">
-                <h1 className='inline-block bg-gradient-to-b from-white from-0% to-[#fcba28] to-100% bg-clip-text text-transparent text-2xl font-extrabold'>
+                <h1 className="inline-block bg-gradient-to-b from-[#fff0cf] from-0% to-[#fcba28] to-100% bg-clip-text text-2xl font-extrabold text-transparent">
                   Full Stack Developer
                 </h1>
               </Sparkles>
@@ -105,7 +117,7 @@ export default function About() {
               user-friendly websites. The thrill of seeing my vision come to
               life as a fully functional platform keeps me constantly pushing
               the boundaries of design and functionality.
-            </p>
+            </div>
           </div>
         </div>
         <div className="lg:pl-20">
