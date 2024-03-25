@@ -303,7 +303,30 @@ export default async function Home() {
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none">
           <Projects />
-          <Resume />
+          {/* <div className="grid lg:grid-cols-3 gap-20"> */}
+            {/* <div className="lg:col-span-2"> */}
+              <Resume />
+            {/* </div> */}
+            {/* <div>
+              <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 h-full">
+                <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+                  <BriefcaseIcon className="h-6 w-6 flex-none" />
+                  <span className="ml-3">Work</span>
+                </h2>
+                <ol className="mt-6 space-y-4">
+                  <li className="flex gap-4">React</li>
+                  <li className="flex gap-4">NextJS</li>
+                  <li className="flex gap-4">PHP</li>
+                  <li className="flex gap-4">Laravel</li>
+                  <li className="flex gap-4">C++</li>
+                  <li className="flex gap-4">Dart</li>
+                  <li className="flex gap-4">Flutter</li>
+                  <li className="flex gap-4">Javascript</li>
+                  <li className="flex gap-4">Javascript</li>
+                </ol>
+              </div>
+            </div> */}
+          {/* </div> */}
           <Contact />
         </div>
       </Container>
