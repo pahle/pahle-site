@@ -38,7 +38,7 @@ export function Footer() {
                   </Link>
                 </Sparkles>
               </div>
-              <p className="flex flex-1 justify-end text-sm text-zinc-800 dark:text-zinc-200">
+              <p className="flex flex-1 justify-end text-sm font-medium text-zinc-800 dark:text-zinc-200">
                 &copy; {new Date().getFullYear()} Pahle. All rights reserved.
               </p>
             </div>
