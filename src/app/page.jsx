@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
+import Sparkles from '@/components/Sparkles'
 import {
   GitHubIcon,
   InstagramIcon,
@@ -133,7 +134,7 @@ function Role({ role }) {
       <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:ring-0">
         <Image
           src={role.logo}
-          alt=""
+          alt={role.company}
           className="h-7 w-7 object-contain"
           unoptimized
         />
@@ -241,31 +242,41 @@ export default async function Home() {
           </p>
           <h1 className="relative text-4xl font-bold tracking-tight text-zinc-800 md:text-4xl lg:text-5xl dark:text-zinc-100">
             Mohammad Rayhan Arkan Fahlevi
-            <div className="absolute right-[86.5px] top-[-3rem] hidden py-12 text-teal-500 opacity-0 duration-[2s] hover:top-[-5.50rem] hover:opacity-100 lg:inline">
-              Pahle
+            <div className="absolute right-[5.2rem] top-[-3rem] hidden py-12 opacity-0 duration-[2s] hover:top-[-5.50rem] hover:opacity-100 lg:inline">
+              <Sparkles className="">
+                <h1 className="inline-block bg-gradient-to-b from-teal-100 from-0% to-teal-500 to-100% bg-clip-text font-extrabold text-transparent">
+                  Pahle
+                </h1>
+              </Sparkles>
             </div>
             <span className="absolute -right-6 top-5 hidden text-xs lg:block">
               {'<- Hover me!'}
             </span>
           </h1>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m a Full Stack Developer based in Bogor, Indonesia. I specialize
-            in building high-quality websites and applications.
-          </p>
+          <div className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+            I’m a{' '}
+            <Sparkles className="">
+              <h1 className="inline-block bg-gradient-to-b from-[#fff0cf] from-0% to-[#fcba28] to-100% bg-clip-text text-lg font-extrabold text-transparent">
+                Full Stack Developer
+              </h1>
+            </Sparkles>{' '}
+            based in Bogor, Indonesia. I specialize in building high-quality
+            websites and applications.
+          </div>
           <div className="mt-6 flex gap-6">
-            <SocialLink href="#" aria-label="Follow on X" icon={XIcon} />
+            {/* <SocialLink href="#" aria-label="Follow on X" icon={XIcon} /> */}
             <SocialLink
-              href="#"
+              href="https://www.instagram.com/rayhanarkan/"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
             />
             <SocialLink
-              href="#"
+              href="https://github.com/pahle"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
             <SocialLink
-              href="#"
+              href="https://www.linkedin.com/in/rayhanarkan/"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />

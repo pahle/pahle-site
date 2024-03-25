@@ -6,14 +6,19 @@ import '@/styles/tailwind.css'
 export const metadata = {
   title: {
     template: '%s - Pahle',
-    default:
-      'Pahle - Full Stack Developer',
+    default: 'Pahle - Full Stack Developer',
   },
   description:
     'I’m Pahle, a Full Stack Developer based in the Indonesia. I specialize in building high-quality websites and applications.',
-  alternates: {
-    types: {
-      'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
     },
   },
   verification: {

@@ -64,7 +64,7 @@ export default function About() {
           <div className="max-w-xs px-2.5 lg:max-w-none">
             <Image
               src={portraitImage}
-              alt=""
+              alt="Myself"
               sizes="(min-width: 1024px) 32rem, 20rem"
               className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
             />
@@ -72,37 +72,58 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            I’m (Pahle). I live in Bogor, Indonesia, where I design the future.
+            I’m{' '}
+            <Sparkles className="">
+              <h1 className="inline-block bg-gradient-to-b from-teal-100 from-0% to-teal-500 to-100% bg-clip-text font-extrabold text-transparent">
+                Pahle
+              </h1>
+            </Sparkles>
+            . I live in Bogor, Indonesia, where I design the future.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <div>
               Like many, I have been passionate about{' '}
-              <InlineTextStyle color="#7B5EA7">making things</InlineTextStyle>{' '}
+              <span className="text-lg font-extrabold text-[#7B5EA7]">
+                making things
+              </span>{' '}
               since childhood. However, my path to creation took a different
               route. In my early teens, my initial interest in technology leaned
               towards ethical hacking. I explored the world of exploiting
               vulnerabilities, but this{' '}
-              <InlineTextStyle color="#DA3842">{"'dark side'"}</InlineTextStyle>{' '}
+              <span className="text-lg font-extrabold text-[#DA3842]">
+                {"'dark side'"}
+              </span>{' '}
               of technology eventually lost its appeal.
             </div>
             <div>
               During my senior high school years, my focus shifted towards
               something more constructive:{' '}
-              <InlineTextStyle color="#50B2E0">web development</InlineTextStyle>
+              <span className="text-lg font-extrabold text-[#50B2E0]">
+                web development
+              </span>
               . This creative outlet for building things aligned better with my
               interests.
             </div>
             <div>
-              I dove <InlineTextStyle color='#F38BA3'>headfirst</InlineTextStyle> into the world of web development. I devoured
-              online tutorials, experimented with different coding languages,
-              and spent countless hours building simple websites. The thrill of
-              creating something functional and visually appealing from scratch
-              was immensely satisfying. As I honed my skills, I began to explore
-              more complex concepts like web frameworks and back-end
-              development. The process of learning and building fueled my{' '}
-              <InlineTextStyle color="#0ba95b">passion</InlineTextStyle>, and I
-              knew I had found my{' '}
-              <InlineTextStyle color="#fc7428">true calling</InlineTextStyle>.
+              I dove{' '}
+              <span className="text-lg font-extrabold text-[#F38BA3]">
+                headfirst
+              </span>{' '}
+              into the world of web development. I devoured online tutorials,
+              experimented with different coding languages, and spent countless
+              hours building simple websites. The thrill of creating something
+              functional and visually appealing from scratch was immensely
+              satisfying. As I honed my skills, I began to explore more complex
+              concepts like web frameworks and back-end development. The process
+              of learning and building fueled my{' '}
+              <span className="text-lg font-extrabold text-[#0BA95B]">
+                passion
+              </span>
+              , and I knew I had found my{' '}
+              <span className="text-lg font-extrabold text-[#FC7428]">
+                true calling
+              </span>
+              .
             </div>
             <div>
               Today, I am a{' '}
@@ -122,16 +143,31 @@ export default function About() {
         </div>
         <div className="lg:pl-20">
           <ul role="list">
-            <SocialLink href="#" icon={XIcon}>
+            {/* <SocialLink href="#" icon={XIcon}>
               Follow on X
-            </SocialLink>
-            <SocialLink href="#" icon={InstagramIcon} className="mt-4">
+            </SocialLink> */}
+            <SocialLink
+              href="https://www.instagram.com/rayhanarkan/"
+              aria-label="Follow on Instagram"
+              icon={InstagramIcon}
+              className="mt-4"
+            >
               Follow on Instagram
             </SocialLink>
-            <SocialLink href="#" icon={GitHubIcon} className="mt-4">
-              Follow on GitHub
+            <SocialLink
+              href="https://github.com/pahle"
+              aria-label="Follow on GitHub"
+              icon={GitHubIcon}
+              className="mt-4"
+            >
+              Follow on Github
             </SocialLink>
-            <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
+            <SocialLink
+              href="https://www.linkedin.com/in/rayhanarkan/"
+              aria-label="Follow on LinkedIn"
+              icon={LinkedInIcon}
+              className="mt-4"
+            >
               Follow on LinkedIn
             </SocialLink>
             <SocialLink
