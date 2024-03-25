@@ -2,6 +2,8 @@ import Link from 'next/link'
 
 import { ContainerInner, ContainerOuter } from '@/components/Container'
 
+import Sparkles from '@/components/Sparkles'
+
 function NavLink({ href, children }) {
   return (
     <Link
@@ -25,9 +27,19 @@ export function Footer() {
                 <NavLink href="/projects">Projects</NavLink>
                 <NavLink href="/uses">Uses</NavLink>
               </div>
+              <div className="text-sm font-medium text-zinc-800 dark:text-zinc-200">
+                Special thanks to :{' '}
+                <Sparkles>
+                  <Link
+                    href="https://github.com/wiscaksono"
+                    className="text-teal-500 hover:underline"
+                  >
+                    Wisnu Wicaksono
+                  </Link>
+                </Sparkles>
+              </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                &copy; {new Date().getFullYear()} Pahle. All rights
-                reserved.
+                &copy; {new Date().getFullYear()} Pahle. All rights reserved.
               </p>
             </div>
           </ContainerInner>

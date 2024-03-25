@@ -232,6 +232,17 @@ function Resume() {
   )
 }
 
+function Projects() {
+  return (
+    <div>
+      <Project number={3} />
+      <Button href="/projects" variant="secondary" className="group w-full mt-12">
+        More Projects
+      </Button>
+    </div>
+  )
+}
+
 export default async function Home() {
   return (
     <>
@@ -285,18 +296,7 @@ export default async function Home() {
       </Container>
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none">
-          <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-            <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-              <BriefcaseIcon className="h-6 w-6 flex-none" />
-              <span className="ml-3">Work</span>
-            </h2>
-            <Project number={3} />
-          </div>
-          <div className="flex justify-center">
-            <Button href="/projects" variant="secondary">
-              More Projects
-            </Button>
-          </div>
+          <Projects />
           <Resume />
           <Contact />
         </div>

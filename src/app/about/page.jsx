@@ -11,7 +11,10 @@ import {
   XIcon,
 } from '@/components/SocialIcons'
 import portraitImage from '@/images/potrait.jpg'
-
+import fullSnackDevSticker from '@/images/stickers/full-snack-dev.svg'
+import jsSticker from '@/images/stickers/js.svg'
+import functionSticker from '@/images/stickers/function.svg'
+import useStateSticker from '@/images/stickers/use-state.svg'
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
     <li className={clsx(className, 'flex')}>
@@ -37,19 +40,6 @@ function MailIcon(props) {
   )
 }
 
-function InlineTextStyle({
-  children,
-  color = '#000',
-  size = 'lg',
-  weight = 'extrabold',
-}) {
-  return (
-    <span className={`text-${size} font-${weight} text-[${color}]`}>
-      {children}
-    </span>
-  )
-}
-
 export const metadata = {
   title: 'About',
   description:
@@ -60,8 +50,36 @@ export default function About() {
   return (
     <Container className="mt-16 sm:mt-32">
       <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
-        <div className="lg:pl-20">
-          <div className="max-w-xs px-2.5 lg:max-w-none">
+        <div className="flex justify-center lg:pl-20">
+          <div className="relative max-w-xs px-2.5 lg:max-w-none">
+            <Image
+              src={fullSnackDevSticker}
+              alt="Full Snack Developer"
+              width={500}
+              height={500}
+              className="absolute -right-4 -top-4 z-10 aspect-square w-20 -rotate-6 rounded-2xl lg:-right-10 lg:-top-6 lg:w-28"
+            />
+            <Image
+              src={jsSticker}
+              alt="JS"
+              width={500}
+              height={500}
+              className="absolute -bottom-4 -left-4 z-10 aspect-square w-20 rotate-6 rounded-2xl lg:-bottom-6 lg:-left-10 lg:w-28"
+            />
+            <Image
+              src={functionSticker}
+              alt="Function"
+              width={500}
+              height={500}
+              className="absolute -left-4 -top-4 z-10 aspect-square w-20 -rotate-6 rounded-2xl lg:-left-8 lg:-top-6 lg:w-28"
+            />
+            <Image
+              src={useStateSticker}
+              alt="Function"
+              width={500}
+              height={500}
+              className="absolute -bottom-4 -right-4 z-10 aspect-square w-20 rotate-6 rounded-2xl lg:-bottom-6 lg:-right-8 lg:w-28"
+            />
             <Image
               src={portraitImage}
               alt="Myself"
@@ -73,7 +91,7 @@ export default function About() {
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
             I’m{' '}
-            <Sparkles className="">
+            <Sparkles>
               <h1 className="inline-block bg-gradient-to-b from-teal-100 from-0% to-teal-500 to-100% bg-clip-text font-extrabold text-transparent">
                 Pahle
               </h1>
@@ -173,7 +191,7 @@ export default function About() {
             <SocialLink
               href="mailto:pahle.work@gmail.com"
               icon={MailIcon}
-              className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
+              className="mt-4"
             >
               pahle.work@gmail.com
             </SocialLink>
