@@ -3,6 +3,7 @@ import Link from 'next/link'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
+import Sparkles from '@/components/Sparkles'
 import {
   GitHubIcon,
   InstagramIcon,
@@ -67,16 +68,18 @@ export default function About() {
               my early teens, my initial interest in technology leaned towards
               ethical hacking. I explored the world of exploiting
               vulnerabilities, but this{' '}
-              <span className="text-lg font-extrabold text-[#50B2E0]">
-                {'dark side'}
+              <span className="text-lg font-extrabold text-[#DA3842]">
+                {"\'dark side\'"}
               </span>{' '}
               of technology eventually lost its appeal.
             </p>
             <p>
               During my senior high school years, my focus shifted towards
               something more constructive:{' '}
-              <span className="text-lg font-bold">web development</span>. This
-              creative outlet for building things aligned better with my
+              <span className="text-lg font-extrabold text-[#50B2E0]">
+                web development
+              </span>
+              . This creative outlet for building things aligned better with my
               interests.
             </p>
             <p>
@@ -90,13 +93,18 @@ export default function About() {
               passion, and I knew I had found my true calling.
             </p>
             <p>
-              Today, I am a <span>Full-Stack Developer</span>, the bridge
-              between imagination and reality. My creativity {"isn't"} confined
-              to a canvas or a notebook; it flourishes in the code I write. With
-              every line, I transform ideas into vibrant, user-friendly
-              websites. The thrill of seeing my vision come to life as a fully
-              functional platform keeps me constantly pushing the boundaries of
-              design and functionality.
+              Today, I am a{' '}
+              <Sparkles className="">
+                <h1 className='inline-block bg-gradient-to-b from-white from-0% to-[#fcba28] to-100% bg-clip-text text-transparent text-2xl font-extrabold'>
+                  Full Stack Developer
+                </h1>
+              </Sparkles>
+              , the bridge between imagination and reality. My creativity isn’t
+              confined to a canvas or a notebook; it flourishes in the code I
+              write. With every line, I transform ideas into vibrant,
+              user-friendly websites. The thrill of seeing my vision come to
+              life as a fully functional platform keeps me constantly pushing
+              the boundaries of design and functionality.
             </p>
           </div>
         </div>
