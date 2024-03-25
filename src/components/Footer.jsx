@@ -32,7 +32,7 @@ export function Footer() {
                 <Sparkles>
                   <Link
                     href="https://github.com/wiscaksono"
-                    className="text-teal-500 hover:underline"
+                    className="text-teal-500 hover:underline text-sm font-extrabold"
                   >
                     Wisnu Wicaksono
                   </Link>
