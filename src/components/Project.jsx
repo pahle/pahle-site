@@ -1,10 +1,10 @@
 import Image from 'next/image'
 
 import { Card } from '@/components/Card'
-import projectNaufalArt from '@/images/projects/naufal-art.png'
-import projectMartineeStudio from '@/images/projects/martinee-studio.png'
-import projectHyundai from '@/images/projects/hyundai.png'
-import projectProspera from '@/images/projects/prospera.png'
+import projectNaufalArt from '@/images/projects/naufal-art.webp'
+import projectMartineeStudio from '@/images/projects/martinee-studio.webp'
+import projectHyundai from '@/images/projects/hyundai.webp'
+import projectProspera from '@/images/projects/prospera.webp'
 
 const projects = [
   {
@@ -65,7 +65,7 @@ export default function Project(props) {
       {projectsToDisplay.map((project) => (
         <Card as="li" key={project.name}>
           <div className="relative z-10 flex w-full items-center justify-center overflow-hidden rounded-xl bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50">
-            <Image src={project.logo} alt={project.name} className="w-full" />
+            <Image src={project.logo} alt={project.name} width={310} height={194} className="w-full" />
           </div>
           <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
             <Card.Link href={project.link.href}>{project.name}</Card.Link>

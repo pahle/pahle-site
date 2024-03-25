@@ -146,7 +146,7 @@ export default function About() {
             <div>
               Today, I am a{' '}
               <Sparkles>
-                <h1 className="inline-block bg-gradient-to-b from-[#fff0cf] from-0% to-[#fcba28] to-100% bg-clip-text text-2xl font-extrabold text-transparent hover:bg-gradient-to-t hover:from-[#fff0cf] hover:to-[#fcba28] hover:bg-clip-text">
+                <h1 className="inline-block bg-gradient-to-b from-[#fff0cf] from-0% to-[#fcba28] to-100% bg-clip-text text-2xl font-extrabold text-transparent">
                   Full Stack Developer
                 </h1>
               </Sparkles>

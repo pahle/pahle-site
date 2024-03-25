@@ -11,11 +11,11 @@ import {
   XIcon,
 } from '@/components/SocialIcons'
 import Project from '@/components/Project'
-import logoMedia from '@/images/logos/media.png'
-import logoProspera from '@/images/logos/prospera.jpg'
+import logoMedia from '@/images/logos/media.ico'
+import logoProspera from '@/images/logos/prospera.ico'
 import logoHyundai from '@/images/logos/hyundai.ico'
-import logoMartinee from '@/images/logos/martinee.png'
-import logoNaufalArt from '@/images/logos/naufal-art.png'
+import logoMartinee from '@/images/logos/martinee.ico'
+import logoNaufalArt from '@/images/logos/naufal-art.ico'
 
 function MailIcon(props) {
   return (
@@ -135,8 +135,10 @@ function Role({ role }) {
         <Image
           src={role.logo}
           alt={role.company}
-          className="h-7 w-7 object-contain"
+          className="object-contain"
           unoptimized
+          width={28}
+          height={28}
         />
       </div>
       <dl className="flex flex-auto flex-wrap gap-x-2">
