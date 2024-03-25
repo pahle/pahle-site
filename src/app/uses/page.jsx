@@ -36,13 +36,13 @@ export default function Uses() {
     >
       <div className="space-y-20">
         <ToolsSection title="Workstation">
-          <Tool title="16” MacBook Pro, M1 Max, 64GB RAM (2021)">
-            I was using an Intel-based 16” MacBook Pro prior to this and the
+          <Tool title="13” MacBook, M1, 8GB RAM (2020)">
+            I was using an Intel-based ROG GL-553-VE prior to this and the
             difference is night and day. I’ve never heard the fans turn on a
             single time, even under the incredibly heavy loads I put it through
             with our various launch simulations.
           </Tool>
-          <Tool title="Apple Pro Display XDR (Standard Glass)">
+          {/* <Tool title="Apple Pro Display XDR (Standard Glass)">
             The only display on the market if you want something HiDPI and
             bigger than 27”. When you’re working at planetary scale, every pixel
             you can get counts.
@@ -60,22 +60,25 @@ export default function Uses() {
           <Tool title="Herman Miller Aeron Chair">
             If I’m going to slouch in the worst ergonomic position imaginable
             all day, I might as well do it in an expensive chair.
-          </Tool>
+          </Tool> */}
         </ToolsSection>
         <ToolsSection title="Development tools">
-          <Tool title="Sublime Text 4">
+          <Tool title="Visual Studio Code">
             I don’t care if it’s missing all of the fancy IDE features everyone
-            else relies on, Sublime Text is still the best text editor ever
-            made.
+            else relies on, Visual Studio Code is still the best text editor
+            ever made.
+          </Tool>
+          <Tool title="Zed">
+            Zed is a high-performance, multiplayer code editor from the creators
+            of Atom and Tree-sitter. {"It's"} also open source.
           </Tool>
           <Tool title="iTerm2">
             I’m honestly not even sure what features I get with this that aren’t
             just part of the macOS Terminal but it’s what I use.
           </Tool>
-          <Tool title="TablePlus">
-            Great software for working with databases. Has saved me from
-            building about a thousand admin interfaces for my various projects
-            over the years.
+          <Tool title="Oh-My-Zsh">
+            I’ve been using Oh-My-Zsh for so long that I can’t even remember
+            what the default Zsh prompt looks like.
           </Tool>
         </ToolsSection>
         <ToolsSection title="Design">
@@ -86,24 +89,10 @@ export default function Uses() {
           </Tool>
         </ToolsSection>
         <ToolsSection title="Productivity">
-          <Tool title="Alfred">
-            It’s not the newest kid on the block but it’s still the fastest. The
-            Sublime Text of the application launcher world.
-          </Tool>
-          <Tool title="Reflect">
-            Using a daily notes system instead of trying to keep things
-            organized by topics has been super powerful for me. And with
-            Reflect, it’s still easy for me to keep all of that stuff
-            discoverable by topic even though all of my writing happens in the
-            daily note.
-          </Tool>
-          <Tool title="SavvyCal">
-            Great tool for scheduling meetings while protecting my calendar and
-            making sure I still have lots of time for deep work during the week.
-          </Tool>
-          <Tool title="Focus">
-            Simple tool for blocking distracting websites when I need to just do
-            the work and get some momentum going.
+          <Tool title="Notion">
+            I’ve tried every note-taking app under the sun and Notion is the
+            only one that’s stuck. It’s the only app I use every single day
+            without fail.
           </Tool>
         </ToolsSection>
       </div>

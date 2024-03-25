@@ -29,8 +29,10 @@
     "tailwindcss": "^3.4.1"
   },
   "devDependencies": {
+    "@types/mdx": "^2.0.12",
     "eslint": "^8.56.0",
     "eslint-config-next": "^14.0.4",
+    "mdx": "^0.3.1",
     "prettier": "^3.1.1",
     "prettier-plugin-tailwindcss": "^0.5.11",
     "sharp": "0.33.1"

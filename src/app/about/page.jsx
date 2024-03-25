@@ -9,7 +9,7 @@ import {
   LinkedInIcon,
   XIcon,
 } from '@/components/SocialIcons'
-import portraitImage from '@/images/portrait.jpg'
+import portraitImage from '@/images/potrait.jpg'
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
@@ -38,7 +38,8 @@ function MailIcon(props) {
 
 export const metadata = {
   title: 'About',
-  description: 'I’m Pahle. I live in Yogyakarta, where I design the future.',
+  description:
+    'I’m Pahle. I live in Bogor, Indonesia, where I design the future.',
 }
 
 export default function About() {
@@ -57,7 +58,7 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            I’m Pahle. I live in Yogyakarta, where I design the future.
+            I’m (Pahle). I live in Bogor, Indonesia, where I design the future.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
@@ -89,14 +90,13 @@ export default function About() {
               passion, and I knew I had found my true calling.
             </p>
             <p>
-              Today, I am a{' '}
-              <span>Full-Stack Developer</span>,
-              the bridge between imagination and reality. My creativity{' '}
-              {"isn't"} confined to a canvas or a notebook; it flourishes in the
-              code I write. With every line, I transform ideas into vibrant,
-              user-friendly websites. The thrill of seeing my vision come to
-              life as a fully functional platform keeps me constantly pushing
-              the boundaries of design and functionality.
+              Today, I am a <span>Full-Stack Developer</span>, the bridge
+              between imagination and reality. My creativity {"isn't"} confined
+              to a canvas or a notebook; it flourishes in the code I write. With
+              every line, I transform ideas into vibrant, user-friendly
+              websites. The thrill of seeing my vision come to life as a fully
+              functional platform keeps me constantly pushing the boundaries of
+              design and functionality.
             </p>
           </div>
         </div>

@@ -235,13 +235,13 @@ export default async function Home() {
   return (
     <>
       <Container className="mt-16 sm:mt-32">
-        <div className="lg:max-w-3xl md:max-w-3xl max-w-xs">
+        <div className="max-w-xs md:max-w-3xl lg:max-w-3xl">
           <p className="mb-6 text-base text-zinc-600 dark:text-zinc-400">
             Hello, my name is
           </p>
-          <h1 className="relative text-4xl font-bold tracking-tight text-zinc-800 lg:text-5xl md:text-4xl dark:text-zinc-100">
+          <h1 className="relative text-4xl font-bold tracking-tight text-zinc-800 md:text-4xl lg:text-5xl dark:text-zinc-100">
             Mohammad Rayhan Arkan Fahlevi
-            <div className="absolute right-[86.5px] top-[-3rem] hidden text-teal-500 opacity-0 duration-[2s] hover:top-[-5.50rem] hover:opacity-100 lg:inline py-12">
+            <div className="absolute right-[86.5px] top-[-3rem] hidden py-12 text-teal-500 opacity-0 duration-[2s] hover:top-[-5.50rem] hover:opacity-100 lg:inline">
               Pahle
             </div>
             <span className="absolute -right-6 top-5 hidden text-xs lg:block">
@@ -249,9 +249,8 @@ export default async function Home() {
             </span>
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-            magnam doloribus quisquam, unde laborum vitae amet maxime sint quasi
-            distinctio?
+            I’m a Full Stack Developer based in Bogor, Indonesia. I specialize
+            in building high-quality websites and applications.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink href="#" aria-label="Follow on X" icon={XIcon} />
@@ -275,7 +274,13 @@ export default async function Home() {
       </Container>
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none">
-          <Project />
+          <Project number={3} />
+          {/* More project button */}
+          <div className="flex justify-center">
+            <Button href="/projects" variant="secondary">
+              More Projects
+            </Button>
+          </div>
           <Resume />
           <Contact />
         </div>

@@ -22,18 +22,21 @@ const projects = [
     logo: projectMartineeStudio,
   },
   {
-    name: 'Hyundai Yogyakarta Adisucipto',
-    description:
-      'Hyundai Yogyakarta Adisucipto is a company that focuses on the sale and service of Hyundai cars.',
-    link: { href: 'https://hyundaijogjaadisucipto.com/', label: 'hyundaijogjaadisucipto.com' },
-    logo: projectHyundai,
-  },
-  {
     name: 'Prospera Science Digita',
     description:
       'Prospera Science Digita is a company that focuses on producing chemical products for laboratories and industries.',
     link: { href: '#', label: 'prosperascience.com' },
     logo: projectProspera,
+  },
+  {
+    name: 'Hyundai Yogyakarta Adisucipto',
+    description:
+      'Hyundai Yogyakarta Adisucipto is a company that focuses on the sale and service of Hyundai cars.',
+    link: {
+      href: 'https://hyundaijogjaadisucipto.com/',
+      label: 'hyundaijogjaadisucipto.com',
+    },
+    logo: projectHyundai,
   },
 ]
 
@@ -48,33 +51,32 @@ function LinkIcon(props) {
   )
 }
 
-export default function Project() {
+export default function Project(props) {
+  // accept a props to show number of project
+  const { number } = props
+  // if number is not defined, show all projects
+  const projectsToDisplay = number ? projects.slice(0, number) : projects
+
   return (
-    <div>
-      <ul
-        role="list"
-        className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2"
-      >
-        {projects.map((project) => (
-          <Card as="li" key={project.name}>
-            <div className="relative z-10 flex w-full items-center justify-center rounded-xl bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 overflow-hidden">
-              <Image
-                src={project.logo}
-                alt={project.name}
-                className="w-full"
-              />
-            </div>
-            <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-              <Card.Link href={project.link.href}>{project.name}</Card.Link>
-            </h2>
-            <Card.Description>{project.description}</Card.Description>
-            <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
-              <LinkIcon className="h-6 w-6 flex-none" />
-              <span className="ml-2">{project.link.label}</span>
-            </p>
-          </Card>
-        ))}
-      </ul>
-    </div>
+    <ul
+      role="list"
+      className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-3"
+    >
+      {projectsToDisplay.map((project) => (
+        <Card as="li" key={project.name}>
+          <div className="relative z-10 flex w-full items-center justify-center overflow-hidden rounded-xl bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50">
+            <Image src={project.logo} alt={project.name} className="w-full" />
+          </div>
+          <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
+            <Card.Link href={project.link.href}>{project.name}</Card.Link>
+          </h2>
+          <Card.Description>{project.description}</Card.Description>
+          <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
+            <LinkIcon className="h-6 w-6 flex-none" />
+            <span className="ml-2">{project.link.label}</span>
+          </p>
+        </Card>
+      ))}
+    </ul>
   )
 }
