@@ -39,7 +39,7 @@ export function Footer() {
                 </Sparkles>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                &copy; {new Date().getFullYear()} Pahle. All rights reserved.
+                {new Date().getFullYear()} Pahle.
               </p>
             </div>
           </ContainerInner>
