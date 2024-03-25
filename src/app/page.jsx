@@ -145,12 +145,12 @@ function Role({ role }) {
           {role.company}
         </dd>
         <dt className="sr-only">Role</dt>
-        <dd className="text-xs text-zinc-500 dark:text-zinc-400">
+        <dd className="text-xs text-zinc-800 dark:text-zinc-200">
           {role.title}
         </dd>
         <dt className="sr-only">Date</dt>
         <dd
-          className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
+          className="ml-auto text-xs text-zinc-800 dark:text-zinc-200"
           aria-label={`${startLabel} until ${endLabel}`}
         >
           <time dateTime={startDate}>{startLabel}</time>{' '}
@@ -236,7 +236,11 @@ function Projects() {
   return (
     <div>
       <Project number={3} />
-      <Button href="/projects" variant="secondary" className="group w-full mt-12">
+      <Button
+        href="/projects"
+        variant="secondary"
+        className="group mt-12 w-full"
+      >
         More Projects
       </Button>
     </div>
