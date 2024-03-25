@@ -3,7 +3,6 @@ import Link from 'next/link'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import { Sparkles } from '@/components/Sparkles'
 import {
   GitHubIcon,
   InstagramIcon,
@@ -91,7 +90,7 @@ export default function About() {
             </p>
             <p>
               Today, I am a{' '}
-              <Sparkles>Full-Stack Developer</Sparkles>,
+              <span>Full-Stack Developer</span>,
               the bridge between imagination and reality. My creativity{' '}
               {"isn't"} confined to a canvas or a notebook; it flourishes in the
               code I write. With every line, I transform ideas into vibrant,
