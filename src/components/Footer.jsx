@@ -31,8 +31,8 @@ export function Footer() {
                 Special thanks to :{' '}
                 <Sparkles>
                   <Link
-                    href="https://github.com/wiscaksono"
-                    className="bg-gradient-to-b from-[#fff0cf] from-0% to-[#fcba28] to-100% bg-clip-text font-extrabold text-transparent"
+                    href="https://wiscaksono.com"
+                    className="text-teal-800 dark:text-teal-400 font-extrabold hover:underline"
                   >
                     Wisnu Wicaksono
                   </Link>
