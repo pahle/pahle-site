@@ -100,23 +100,23 @@ export default function About() {
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <div>
-              Like many, I have been passionate about{' '}
-              <span className="bg-zinc-800 rounded-xl p-1 text-lg font-extrabold text-[#c7a1ff]">
+              Like many, I have been passionate about{'\n'}
+              <span className="inline-block rounded-xl bg-zinc-800 p-1 text-lg font-extrabold text-[#c7a1ff]">
                 making things
               </span>{' '}
               since childhood. However, my path to creation took a different
               route. In my early teens, my initial interest in technology leaned
               towards ethical hacking. I explored the world of exploiting
-              vulnerabilities, but this{' '}
-              <span className="bg-zinc-800 rounded-xl p-1 text-lg font-extrabold text-[#B5B5B5]">
+              vulnerabilities, but this{'n'}
+              <span className="inline-block rounded-xl bg-zinc-800 p-1 text-lg font-extrabold text-[#B5B5B5]">
                 {"'dark side'"}
               </span>{' '}
               of technology eventually lost its appeal.
             </div>
             <div>
               During my senior high school years, my focus shifted towards
-              something more constructive:{' '}
-              <span className="bg-zinc-800 rounded-xl p-1 text-lg font-extrabold text-[#50B2E0]">
+              something more constructive:{'\n'}
+              <span className="inline-block rounded-xl bg-zinc-800 p-1 text-lg font-extrabold text-[#50B2E0]">
                 web development
               </span>
               . This creative outlet for building things aligned better with my
@@ -124,7 +124,7 @@ export default function About() {
             </div>
             <div>
               I dove{' '}
-              <span className="bg-zinc-800 rounded-xl p-1 text-lg font-extrabold text-[#F38BA3]">
+              <span className="inline-block rounded-xl bg-zinc-800 p-1 text-lg font-extrabold text-[#F38BA3]">
                 headfirst
               </span>{' '}
               into the world of web development. I devoured online tutorials,
@@ -134,18 +134,18 @@ export default function About() {
               satisfying. As I honed my skills, I began to explore more complex
               concepts like web frameworks and back-end development. The process
               of learning and building fueled my{' '}
-              <span className="bg-zinc-800 rounded-xl p-1 text-lg font-extrabold text-[#0BA95B]">
+              <span className="inline-block rounded-xl bg-zinc-800 p-1 text-lg font-extrabold text-[#0BA95B]">
                 passion
               </span>
               , and I knew I had found my{' '}
-              <span className="bg-zinc-800 rounded-xl p-1 text-lg font-extrabold text-[#FC7428]">
+              <span className="inline-block rounded-xl bg-zinc-800 p-1 text-lg font-extrabold text-[#FC7428]">
                 true calling
               </span>
               .
             </div>
             <div>
               Today, I am a{' '}
-              <Sparkles className="bg-zinc-800 rounded-xl px-1">
+              <Sparkles className="inline-block rounded-xl bg-zinc-800 px-1">
                 <h1 className="inline-block bg-gradient-to-b from-[#fff0cf] from-0% to-[#fcba28] to-100% bg-clip-text text-2xl font-extrabold text-transparent">
                   Full Stack Developer
                 </h1>
