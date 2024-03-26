@@ -10,7 +10,7 @@ import {
   LinkedInIcon,
   XIcon,
 } from '@/components/SocialIcons'
-import portraitImage from '@/images/potrait.webp'
+import portraitImage from '@/images/potrait2.webp'
 import fullSnackDevSticker from '@/images/stickers/full-snack-dev.svg'
 import jsSticker from '@/images/stickers/js.svg'
 import functionSticker from '@/images/stickers/function.svg'
