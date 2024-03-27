@@ -18,7 +18,7 @@ const projects = [
     name: 'Martinee Studio',
     description:
       'Martinee Studio is a clothing company that focuses on the design and production of clothing with a modern and elegant concept.',
-    link: { href: '#', label: 'martineestudio.com' },
+    link: { href: 'https://martinee.vercel.app/', label: 'martineestudio.com' },
     logo: projectMartineeStudio,
   },
   {
