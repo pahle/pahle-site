@@ -9,7 +9,7 @@ export const metadata = {
     default: 'Pahle - Full Stack Developer',
   },
   description:
-    'I’m Pahle, a Full Stack Developer based in Bogor, Indonesia. I specialize in building high-quality websites and applications.',
+    'Mohammad Rayhan Arkan Fahlevi, a Full Stack Developer based in Bogor, Indonesia. I specialize in building high-quality websites and applications.',
   robots: {
     index: true,
     follow: true,
