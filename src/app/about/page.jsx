@@ -107,7 +107,7 @@ export default function About() {
               since childhood. However, my path to creation took a different
               route. In my early teens, my initial interest in technology leaned
               towards ethical hacking. I explored the world of exploiting
-              vulnerabilities, but this{'n'}
+              vulnerabilities, but this{'\n'}
               <span className="inline-block rounded-xl bg-zinc-800 p-1 text-lg font-extrabold text-[#B5B5B5]">
                 {"'dark side'"}
               </span>{' '}
