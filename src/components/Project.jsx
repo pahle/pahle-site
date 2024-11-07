@@ -11,7 +11,7 @@ const projects = [
     name: 'NaufalArt',
     description:
       'Naufal Art is a private company founded in 2004. The company works with wood, stone, and furniture with a natural art concept.',
-    link: { href: 'https://naufalart.com/', label: 'naufalart.com' },
+    link: { href: 'https://naufalart.vercel.app/', label: 'naufalart.com' },
     logo: projectNaufalArt,
   },
   {
