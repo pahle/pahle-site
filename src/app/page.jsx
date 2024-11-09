@@ -170,22 +170,22 @@ function Role({ role }) {
 function Resume() {
   let resume = [
     {
-      company: 'CV. Media Cipta Gemilang',
-      title: 'Full-Stack Developer',
-      logo: logoMedia,
-      start: '2020',
-      end: {
-        label: '2023',
-        dateTime: new Date().getFullYear().toString(),
-      },
-    },
-    {
       company: 'PT. Prospera Science Digita',
       title: 'Full-Stack Developer',
       logo: logoProspera,
       start: '2023',
       end: {
         label: 'Present',
+        dateTime: new Date().getFullYear().toString(),
+      },
+    },
+    {
+      company: 'CV. Media Cipta Gemilang',
+      title: 'Full-Stack Developer',
+      logo: logoMedia,
+      start: '2020',
+      end: {
+        label: '2023',
         dateTime: new Date().getFullYear().toString(),
       },
     },
