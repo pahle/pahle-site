@@ -10,7 +10,7 @@ import {
   LinkedInIcon,
   XIcon,
 } from '@/components/SocialIcons'
-import portraitImage from '@/images/potrait2.webp'
+import portraitImage from '@/images/potrait4.png'
 import fullSnackDevSticker from '@/images/stickers/full-snack-dev.svg'
 import jsSticker from '@/images/stickers/js.svg'
 import functionSticker from '@/images/stickers/function.svg'
@@ -85,6 +85,7 @@ export default function About() {
               alt="Myself"
               sizes="(min-width: 1024px) 32rem, 20rem"
               className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+              unoptimized
             />
           </div>
         </div>
